@@ -12,11 +12,22 @@ const HomePage: React.FC = () => {
     const [products, setProducts] = useState<Product[]>([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/products')
-            .then(response => response.json())
-            .then(data => setProducts(data))
-            .catch(error => console.error('Error fetching products:', error));
+        const fetchProducts = async () => {
+            try {
+                const response = await fetch('http://localhost:5000/api/products');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                setProducts(data);
+            } catch (error) {
+                console.error('Error fetching products:', error);
+            }
+        };
+    
+        fetchProducts();
     }, []);
+    
 
     return (
         <div>
