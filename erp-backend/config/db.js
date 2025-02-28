@@ -1,6 +1,10 @@
-try {
-    mongoose.connect('mongodb://127.0.0.1:27017/supermarket-erp');
-    console.log('MongoDB Connected (Local)');
-} catch (err) {
-    console.error('MongoDB Connection Error:', err);
-}
+const mysql = require('mysql2/promise');
+
+const db = mysql.createPool({
+    host: process.env.DB_HOST || 'localhost',
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || 'password',
+    database: process.env.DB_NAME || 'supermarket_erp'
+});
+
+module.exports = db;
