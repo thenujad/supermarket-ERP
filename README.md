@@ -1,10 +1,10 @@
-# 🛒 Supermarket ERP (React + Node.js + MongoDB)
+# 🛒 Supermarket ERP (React + Node.js + MySQL)
 
 ## 📌 Project Overview
 This is a **Supermarket ERP System** built with:
 - 🎨 **Frontend:** React, Vite, TypeScript
-- ⚙️ **Backend:** Node.js, Express.js, MongoDB (Local Database)
-- 🗄️ **Database:** MongoDB (running locally on `localhost:27017`)
+- ⚙️ **Backend:** Node.js, Express.js, MySQL (Local Database)
+- 🗄️ **Database:** MySQL (running locally on `localhost`)
 
 ## 📂 Folder Structure
 ```
@@ -12,12 +12,14 @@ backend/
 ├── 📁 node_modules/
 ├── 📄 package.json
 ├── 🚀 server.js           # Express server setup
-├── 📂 models/
-│   ├── 📄 Product.js      # MongoDB Schema for products
-├── 📂 routes/
+├── 📁 models/
+│   ├── 📄 Product.js      # MySQL Schema for products
+├── 📁 routes/
 │   ├── 📄 products.js     # API routes for fetching products
-├── 📂 config/
-│   ├── 📄 db.js           # MongoDB connection logic
+├── 📁 controllers/
+│   ├── 📄 productController.js # Logic for handling product requests
+├── 📁 config/
+│   ├── 📄 db.js           # MySQL connection logic
 
 frontend/
 ├── 📁 node_modules/
@@ -88,7 +90,7 @@ frontend/
   ```
 
 ## 📝 Notes
-- 🗄️ **MongoDB must be running locally** on `mongodb://127.0.0.1:27017/supermarket-erp`
+- 🗄️ **MySQL must be running locally** and properly configured.
 - 🔄 The frontend dynamically fetches product data from the backend.
 - ⚠️ No UI changes were made—only the database connection was updated.
 
