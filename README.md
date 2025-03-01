@@ -15,7 +15,7 @@ backend/
 ├── 📁 models/
 │   ├── 📄 Product.js      # MySQL Schema for products
 ├── 📁 routes/
-│   ├── 📄 products.js     # API routes for fetching products
+│   ├── 📄 productRoutes.js     # API routes for fetching products
 ├── 📁 controllers/
 │   ├── 📄 productController.js # Logic for handling product requests
 ├── 📁 config/
@@ -28,6 +28,7 @@ frontend/
 │   │   ├── 🎨 ProductCard.tsx  # Product UI component
 │   ├── 📂 pages/
 │   │   ├── 🏠 HomePage.tsx     # Fetches products from backend
+│   │   ├── 🎨 HomePage.css     # Styles for homepage
 │   ├── 📂 services/
 │   │   ├── 🌐 api.ts           # API call logic
 │   ├── 🏗️ App.tsx              # Main application file
@@ -36,6 +37,14 @@ frontend/
 ├── 📂 public/
 │   ├── 📄 index.html           # Root HTML file
 ```
+
+## 🌟 UI Screenshots
+### 🏠 Home Page
+![Home Page](screenshots/Home_screen_01.png)
+
+### 📝 Products List
+![Products List](screenshots/Home_screen_02.png)
+
 
 ## ⚙️ Setup Instructions
 ### 🖥️ Backend Setup
@@ -96,3 +105,6 @@ frontend/
 
 ## 👨‍💻 Author
 Developed as part of the **Security and Compliance in the Cloud** coursework by **Thenuja Dulwana**. 🚀📚
+
+
+
