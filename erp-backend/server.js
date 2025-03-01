@@ -1,10 +1,10 @@
 require('dotenv').config();
 const express = require('express');
-const cors = require('cors');  // Allow frontend requests
+const cors = require('cors');
 const productRoutes = require('./routes/productRoutes');
 
 const app = express();
-app.use(cors());  // Add CORS middleware
+app.use(cors());
 app.use(express.json());
 
 app.use('/api', productRoutes);
