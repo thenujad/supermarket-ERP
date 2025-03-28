@@ -1,4 +1,4 @@
-# 🛒 Supermarket ERP (React + Node.js + MySQL)
+# 🛒 Supermarket ERP (React.js + Node.js + MySQL)
 
 ## 📌 Project Overview
 This is a **Supermarket ERP System** built with:
