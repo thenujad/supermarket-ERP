@@ -104,7 +104,7 @@ frontend/
 - ⚠️ No UI changes were made—only the database connection was updated.
 
 ## 👨‍💻 Author
-Developed as part of the **Security and Compliance in the Cloud** coursework by **Thenuja Dulwana**. 🚀📚
+Developed by **Thenuja Dulwana**. 🚀📚
 
 
 
